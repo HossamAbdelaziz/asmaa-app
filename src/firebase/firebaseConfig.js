@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore"; // ✅ Import Firestore
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCRjLgVdpee9nYMNGW0U5ea6ezqo3F79VA",
+    apiKey: "AIzaSyAkZlNRYXi3-TDWoLgr_jLFpjzRfeQakC4",
     authDomain: "asmaa-app-2759b.firebaseapp.com",
     projectId: "asmaa-app-2759b",
     storageBucket: "asmaa-app-2759b.firebasestorage.app",
