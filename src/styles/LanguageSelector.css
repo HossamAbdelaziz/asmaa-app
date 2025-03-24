@@ -1,0 +1,54 @@
+/* Ensure the popup covers the entire screen */
+.language-popup {
+    position: fixed !important;
+    /* Make sure it's fixed */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999 !important;
+    /* Ensure it appears above everything */
+}
+
+/* Popup Content Box */
+.language-popup-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    /* Prevent it from being too wide */
+    width: 100%;
+}
+
+/* Buttons */
+.language-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.language-buttons button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.language-buttons button:hover {
+    transform: scale(1.1);
+}
+
+/* Ensure it disappears completely when hidden */
+.language-popup.hidden {
+    display: none !important;
+}

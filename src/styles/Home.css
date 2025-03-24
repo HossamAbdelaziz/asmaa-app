@@ -1,0 +1,89 @@
+/* Global Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebe4d9;
+    /* Soft beige background like Manar Healings */
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section (Full-Screen) */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Full screen height */
+    padding: 50px 20px;
+    /* background: linear-gradient(to bottom, #fdfaf5, #faede8);
+    /* Soft beige background */
+    text-align: left;
+    flex-direction: row;
+    max-width: 1300px;
+    margin: 0 auto;
+    /* Center the content */
+}
+
+/* Left Side - Text Content */
+.hero-text {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2D2D2D;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #5A5A5A;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Right Side - Image */
+.hero-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 380px;
+    height: auto;
+    border-radius: 50%;
+    /* Circular image */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .hero-text {
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-image img {
+        width: 260px;
+    }
+}
