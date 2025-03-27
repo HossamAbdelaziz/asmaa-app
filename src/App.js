@@ -17,6 +17,10 @@ import Signup from "./pages/Signup"; // User signup page
 import Admin from "./pages/Admin"; // Protected admin area
 import AdminLogin from "./pages/AdminLogin"; // Admin login page
 import AdminDashboard from "./pages/AdminDashboard"; // ✅ This was missing before – added now!
+import UserDashboard from "./pages/UserDashboard";
+import ManagePrograms from "./pages/ManagePrograms";
+
+
 
 function App() {
   return (
@@ -33,11 +37,15 @@ function App() {
           <Route path="/programs" element={<Programs />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/dashboard" element={<UserDashboard />} />
+
 
           {/* ✅ Admin Routes */}
           <Route path="/admin" element={<Admin />} /> {/* Admin entry page (check & redirect) */}
           <Route path="/admin-login" element={<AdminLogin />} /> {/* Admin login form */}
           <Route path="/admin-dashboard" element={<AdminDashboard />} /> {/* Real admin dashboard */}
+          <Route path="/admin/programs" element={<ManagePrograms />} />
+
         </Routes>
       </div>
     </>

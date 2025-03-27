@@ -140,10 +140,10 @@ export const getUserData = async (userId) => {
 /* ✅ Auth State Listener - Track User Login Status */
 /* =============================== */
 export const checkAuthState = (callback) => {
-    onAuthStateChanged(auth, (user) => {
-        callback(user);
-    });
+    return onAuthStateChanged(auth, callback);
 };
+
+
 
 /* =============================== */
 /* ✅ Admin State Listener - Track Admin Login Status */

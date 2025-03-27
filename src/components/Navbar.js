@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { FaHome, FaInfoCircle, FaListAlt, FaSignInAlt, FaUserPlus, FaUserCircle } from "react-icons/fa";
+import { FaHome, FaInfoCircle, FaListAlt, FaSignInAlt, FaUserPlus } from "react-icons/fa";
 import { logout, checkAuthState, getUserData } from "../firebase/authService";
 import avatarDefault from "../assets/avatar-default.png";
 import "../styles/Navbar.css";

@@ -1,0 +1,106 @@
+/* Dashboard.css */
+
+/* Container tweaks */
+.dashboard {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Cards */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* Section headings */
+.card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #2e3a59;
+}
+
+/* Definition list styling */
+dl {
+    margin: 0;
+}
+
+dt {
+    font-weight: 600;
+    color: #555;
+}
+
+dd {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+/* Progress bar customization */
+progress {
+    height: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #eee;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4CAF50;
+}
+
+progress::-moz-progress-bar {
+    background-color: #4CAF50;
+}
+
+/* Buttons */
+.btn {
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    top: 80px;
+    /* Height of the navbar */
+    left: 0;
+    width: 200px;
+    height: calc(100% - 80px);
+    /* Adjust for navbar height */
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    padding-top: 1rem;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* Main dashboard content */
+.dashboard {
+    margin-left: 200px;
+    padding-top: 80px;
+    /* Make space for navbar */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .dashboard {
+        margin-left: 0;
+        padding-top: 140px;
+        /* Enough space for both navbar + sidebar */
+    }
+}

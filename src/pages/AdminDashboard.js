@@ -38,7 +38,7 @@ function AdminDashboard() {
                 <h4>Admin Controls</h4>
                 <ul>
                     <li>📋 View / Manage Users</li>
-                    <li>🎓 Add or Edit Programs</li>
+                    <li><a href="/admin/programs">🎓 Add or Edit Programs</a></li>
                     <li>💬 Manage Announcements</li>
                     <li>📅 View Session Bookings</li>
                 </ul>
